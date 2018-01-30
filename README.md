@@ -1,6 +1,7 @@
 # Segment
 refernence paper:<p>
 《The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation》  <p>
+   Simon Jégou, Michal Drozdzal, David Vazquez, Adriana Romero, Yoshua Bengio<p>
 https://arxiv.org/abs/1611.09326  <p>
 ![image](https://github.com/KirtoXX/segment/blob/master/20170817161456238.png)
 # Mychange
