@@ -1,4 +1,4 @@
-# Segment
+# Segment network architecture
 refernence paper:<p>
 《The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation》  <p>
    Simon Jégou, Michal Drozdzal, David Vazquez, Adriana Romero, Yoshua Bengio<p>
