@@ -21,7 +21,7 @@ output size:128x128，interpolation—>512x512    <p>
 | TD2           | 32x32         |  240  |   1x1   | 
 | DB3           | 32x32         |  456  |   3x3   | 7      |
 | TD3           | 16x16         |  456  |   1x1   | 
-| Cente         | 16x16         |  672  |   3x3   | 9      |
+| Center        | 16x16         |  672  |   3x3   | 9      |
 | TU5           | 32x32         |  456  |   1x1   |
 | C5(TU5,DB3)   | 32x32         |  912  |   NULL  |
 | DB5           | 32x32         |  456  |   3x3   |  7     |
