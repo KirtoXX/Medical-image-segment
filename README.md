@@ -12,17 +12,26 @@ output size:128x128，interpolation—>512x512    <p>
 
 | net           | feature map   | filter|  size   |
 | ------------- |:-------------:| -----:|--------:|
-| Input         | 512x512       | 1     |  null   |
-| conv0         | 256x256       |  48   |   7x7   | 
-| maxpooling    | 128x128       |  48   |   2x2   | 
-| DB            | 128x128       |  120  |   3x3   | 
-| TD            | 64x64         |  120  |   1x1   | 
-| DB            | 64x64         |  240  |   3x3   | 
-| TD            | 32x32         |  240  |   1x1   | 
-| DB            | 32x32         |  456  |   3x3   | 
-| TD            | 16x16         |  456  |   1x1   | 
-| DB            | 16x16         |  672  |   3x3   |
-
+| Input         | 512x512       | 1     |  NULL   |
+| Conv0         | 256x256       |  48   |   7x7   | 
+| Maxpooling    | 128x128       |  48   |   2x2   | 
+| DB1           | 128x128       |  120  |   3x3   | 
+| TD1           | 64x64         |  120  |   1x1   | 
+| DB2           | 64x64         |  240  |   3x3   | 
+| TD2           | 32x32         |  240  |   1x1   | 
+| DB3           | 32x32         |  456  |   3x3   | 
+| TD3           | 16x16         |  456  |   1x1   | 
+| Cente         | 16x16         |  672  |   3x3   |
+| TU5           | 32x32         |  456  |   1x1   |
+| C5(TU5,DB3)   | 32x32         |  912  |   NULL  |
+| DB5           | 32x32         |  456  |   3x3   |
+| TU6           | 64x64         |  240  |   1x1   |
+| C6(TU6,DB2)   | 64x64         |  480  |   NULL  |
+| DB6           | 64x64         |  240  |   3x3   |
+| TU7           | 128x128       |  120  |   1x1   |
+| C7(TU7,DB1)   | 128x128       |  480  |   NULL  |
+| DB7           | 128x128       |  120  |   3x3   |
+| Output         | 128x128      |  1    |   1x1   |
 layer:51  <p>
 total size of network:26Mb    <p>
 # Result
