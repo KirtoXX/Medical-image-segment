@@ -1,4 +1,4 @@
-from tiramasu56 import inference
+from tiramasu56_nodropout import inference
 import cv2
 from keras import Model
 from keras.layers import Input
@@ -12,8 +12,8 @@ def read_image(path):
     return result
 
 def main():
-    img_path = 'data/img/volume-0.nii/59.jpg'
-    seg_path = 'data/seg/segmentation-0.nii/59.jpg'
+    img_path = 'data/img/volume-76.nii/104.jpg'
+    seg_path = 'data/seg/segmentation-76.nii/104.jpg'
     img = read_image(img_path)
     seg = misc.imread(seg_path)
     img_t = np.expand_dims(img,axis=0)
@@ -21,7 +21,7 @@ def main():
     input = Input(shape=[512,512,1])
     logit = inference(input)
     model = Model(input,logit)
-    model.load_weights('weights/last_weight.h5')
+    model.load_weights('weights/100epoch.h5')
     result = model.predict(img_t)
 
     result = np.squeeze(result,axis=0)
