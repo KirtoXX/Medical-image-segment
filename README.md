@@ -10,11 +10,18 @@ use 7x7 conv and 2x2 stride down sample to 256x256  <p>
 use 2x2 maxpooling down sample to 128x128 <p>
 output size:128x128，interpolation—>512x512    <p>
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| net           | feature map   | filter|  size   |
+| ------------- |:-------------:| -----:|--------:|
+| Input         | 512x512       | 1     |  null   |
+| conv0         | 256x256       |  48   |   7x7   | 
+| maxpooling    | 128x128       |  48   |   2x2   | 
+| DB            | 128x128       |  120  |   3x3   | 
+| TD            | 64x64         |  120  |   1x1   | 
+| DB            | 64x64         |  240  |   3x3   | 
+| TD            | 32x32         |  240  |   1x1   | 
+| DB            | 32x32         |  456  |   3x3   | 
+| TD            | 16x16         |  456  |   1x1   | 
+| DB            | 16x16         |  672  |   3x3   |
 
 layer:51  <p>
 total size of network:26Mb    <p>
