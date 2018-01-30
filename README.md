@@ -31,8 +31,8 @@ output size:128x128，interpolation—>512x512    <p>
 | TU7           | 128x128       |  120  |   1x1   |
 | C7(TU7,DB1)   | 128x128       |  480  |   NULL  |
 | DB7           | 128x128       |  120  |   3x3   |
-| Output         | 128x128      |  1    |   1x1   |
-</p>
+| Output        | 128x128      |  1    |   1x1   |
+<p>
 layer:51  <p>
 total size of network:26Mb    <p>
 # Result
