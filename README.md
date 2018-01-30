@@ -10,7 +10,7 @@ use 7x7 conv and 2x2 stride down sample to 256x256  <p>
 use 2x2 maxpooling down sample to 128x128 <p>
 output size:128x128，interpolation—>512x512    <p>
 
-| net           | feature map   | filter|  size   |DB size |
+| Layer         | feature map   | filter| Conv    |DB size |
 | ------------- |:-------------:| -----:|--------:|-------:|
 | Input         | 512x512       | 1     |  NULL   |
 | Conv0         | 256x256       |  48   |   7x7   | 
@@ -31,7 +31,7 @@ output size:128x128，interpolation—>512x512    <p>
 | TU7           | 128x128       |  120  |   1x1   |
 | C7(TU7,DB1)   | 128x128       |  480  |   NULL  |
 | DB7           | 128x128       |  120  |   3x3   |  3     |
-| Output        | 128x128      |  1    |   1x1   |
+| Output        | 128x128       |  1    |   1x1   |
 <p><p>
 layer:51  <p>
 total size of network:26Mb    <p>
