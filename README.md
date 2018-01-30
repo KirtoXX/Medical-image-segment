@@ -29,7 +29,7 @@ output size:128x128，interpolation—>512x512    <p>
 | C6(TU6,DB2)   | 64x64         |  480  |   NULL  |
 | DB6           | 64x64         |  240  |   3x3   |  5     |
 | TU7           | 128x128       |  120  |   1x1   |
-| C7(TU7,DB1)   | 128x128       |  480  |   NULL  |
+| C7(TU7,DB1)   | 128x128       |  240  |   NULL  |
 | DB7           | 128x128       |  120  |   3x3   |  3     |
 | Output        | 128x128       |  1    |   1x1   |
 <p><p>
