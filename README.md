@@ -10,31 +10,32 @@ use 7x7 conv and 2x2 stride down sample to 256x256  <p>
 use 2x2 maxpooling down sample to 128x128 <p>
 output size:128x128，interpolation—>512x512    <p>
 
-| net           | feature map   | filter|  size   |
-| ------------- |:-------------:| -----:|--------:|
+| net           | feature map   | filter|  size   |DB size |
+| ------------- |:-------------:| -----:|--------:|-------:|
 | Input         | 512x512       | 1     |  NULL   |
 | Conv0         | 256x256       |  48   |   7x7   | 
 | Maxpooling    | 128x128       |  48   |   2x2   | 
-| DB1           | 128x128       |  120  |   3x3   | 
+| DB1           | 128x128       |  120  |   3x3   | 3      | 
 | TD1           | 64x64         |  120  |   1x1   | 
-| DB2           | 64x64         |  240  |   3x3   | 
+| DB2           | 64x64         |  240  |   3x3   | 5      |
 | TD2           | 32x32         |  240  |   1x1   | 
-| DB3           | 32x32         |  456  |   3x3   | 
+| DB3           | 32x32         |  456  |   3x3   | 7      |
 | TD3           | 16x16         |  456  |   1x1   | 
-| Cente         | 16x16         |  672  |   3x3   |
+| Cente         | 16x16         |  672  |   3x3   | 9      |
 | TU5           | 32x32         |  456  |   1x1   |
 | C5(TU5,DB3)   | 32x32         |  912  |   NULL  |
-| DB5           | 32x32         |  456  |   3x3   |
+| DB5           | 32x32         |  456  |   3x3   |  7     |
 | TU6           | 64x64         |  240  |   1x1   |
 | C6(TU6,DB2)   | 64x64         |  480  |   NULL  |
-| DB6           | 64x64         |  240  |   3x3   |
+| DB6           | 64x64         |  240  |   3x3   |  5     |
 | TU7           | 128x128       |  120  |   1x1   |
 | C7(TU7,DB1)   | 128x128       |  480  |   NULL  |
-| DB7           | 128x128       |  120  |   3x3   |
+| DB7           | 128x128       |  120  |   3x3   |  3     |
 | Output        | 128x128      |  1    |   1x1   |
 <p><p>
 layer:51  <p>
 total size of network:26Mb    <p>
+
 # Result
 ![image](https://github.com/KirtoXX/segment/blob/master/tiramasu56.png)
    
