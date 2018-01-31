@@ -3,7 +3,7 @@ refernence paper:<p>
 《The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation》  <p>
    Simon Jégou, Michal Drozdzal, David Vazquez, Adriana Romero, Yoshua Bengio<p>
 https://arxiv.org/abs/1611.09326  <p>
-![image](https://github.com/KirtoXX/segment/blob/master/20170817161456238.png)
+![image](https://github.com/KirtoXX/Medical-image-segment/blob/master/reference/20170823143143443.jpg)
 # Mychange
 input size:512x512    <p>
 use 7x7 conv and 2x2 stride down sample to 256x256  <p>
@@ -38,7 +38,7 @@ layer:51  <p>
 total size of network:26Mb    <p>
 
 # Result
-![image](https://github.com/KirtoXX/segment/blob/master/tiramasu56.png)
+![image](https://github.com/KirtoXX/Medical-image-segment/blob/master/reference/tiramasu56.png)
    
   
   
