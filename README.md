@@ -1,3 +1,6 @@
+# Medical-image-segment
+![image](https://github.com/KirtoXX/Medical-image-segment/blob/master/reference/tiramasu56.png)
+
 # Segment network architecture
 refernence paper:<p>
 《The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation》  <p>
@@ -37,8 +40,6 @@ Dense block groth rate:24<p>
 layer:51  <p>
 total size of network:26Mb    <p>
 
-# Result
-![image](https://github.com/KirtoXX/Medical-image-segment/blob/master/reference/tiramasu56.png)
    
   
   
