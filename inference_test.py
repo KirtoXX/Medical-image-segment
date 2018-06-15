@@ -12,8 +12,8 @@ def read_image(path):
     return result
 
 def main():
-    img_path = 'data/img/volume-76.nii/104.jpg'
-    seg_path = 'data/seg/segmentation-76.nii/104.jpg'
+    img_path = 'data/img/volume-90.nii/374.jpg'
+    seg_path = 'data/seg/segmentation-90.nii/374.jpg'
     img = read_image(img_path)
     seg = misc.imread(seg_path)
     img_t = np.expand_dims(img,axis=0)
